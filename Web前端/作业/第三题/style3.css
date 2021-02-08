@@ -1,0 +1,12 @@
+#information{
+  width: 600px;
+  height: 480px;
+  background: #84ccc9;
+  margin: 0 auto;
+}
+.box{
+  position: relative;
+  font-size: 18px;
+  top: 10px;
+  left:20px;
+}

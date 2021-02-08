@@ -1,0 +1,48 @@
+body {
+  background-color: #f0f0f0;
+  word-wrap: break-word;
+}
+button.close {
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none;
+}
+
+#bodyer {
+  padding: 85px 0;
+}
+
+.logo {
+  color: #aaa !important;
+}
+.logo:hover {
+  color: white !important;
+}
+.bg {
+  background: url(img/background.jpg);
+  background-position: left top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.cardStyle {
+  border-radius: 4px !important;
+  box-shadow: -1px -1px 10px rgba(155, 89, 182, 0.5) !important;
+  -webkit-box-shadow: -1px -1px 10px rgba(155, 89, 182, 0.5) !important;
+}
+.test {
+  width: 500px;
+  height: 2000px;
+}
+.test1a {
+  width: 200px;
+  height: 1000px;
+  background: gray;
+}
+.test2b {
+  width: 200px;
+  height: 1000px;
+  background: blue;
+}

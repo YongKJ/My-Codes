@@ -1,0 +1,88 @@
+body {
+  background-color: #f0f0f0;
+  word-wrap: break-word;
+}
+h5 {
+  font-weight: 100;
+}
+
+#bodyer {
+  padding: 80px 0;
+}
+
+.close {
+  color: black !important;
+}
+.navbar-nav > li > a {
+  color: #ffffff;
+}
+.navbar-nav > li > a:hover {
+  display: block;
+  background: #262c35 !important;
+}
+.navbar-brand {
+  background: url(img/logo1.svg) no-repeat;
+  background-position: center center;
+  width: 200px;
+  height: 50px;
+  display: block;
+}
+.logo {
+  color: #aaa !important;
+}
+.logo:hover {
+  color: white !important;
+}
+.bg {
+  background: url(img/background.jpg);
+  background-position: left top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.well {
+  font-family: "Microsoft YaHei", Helvetica Neue, Helvetica, Arial, sans-serif;
+  background: white;
+  font-size: 14px;
+  border-radius: 4px;
+  box-shadow: -1px -1px 10px rgba(155, 89, 182, 0.5);
+  -webkit-box-shadow: -1px -1px 10px rgba(155, 89, 182, 0.5);
+}
+div.search {
+  margin-bottom: 20px;
+}
+#sidebar aside > div {
+  border-radius: 4px;
+  box-shadow: 1px -1px 6px rgba(155, 89, 182, 0.5);
+  -webkit-box-shadow: 1px -1px 6px rgba(155, 89, 182, 0.5);
+}
+#sidebar aside > div.search button {
+  color: #ffffff;
+  background-color: #e74c3c;
+  border-bottom-left-radius: 0px !important;
+  border-top-left-radius: 0px !important;
+  position: absolute;
+  right: 0px;
+  width: 35px;
+  font-size: 12px;
+}
+div.search input[type="text"] {
+  width: 100%;
+  height: 31px;
+  float: right;
+}
+
+.test {
+  width: 500px;
+  height: 2000px;
+}
+.test1a {
+  width: 200px;
+  height: 1000px;
+  background: gray;
+}
+.test2b {
+  width: 200px;
+  height: 1000px;
+  background: blue;
+}

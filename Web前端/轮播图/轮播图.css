@@ -1,0 +1,82 @@
+ul li{
+	float: left;
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+a{
+	margin: 0px;
+	padding: 0px;
+}
+img{
+	width: 1280px;
+	height: 720px;
+}
+#picture{
+	width: 1280px;
+	height: 720px;
+	margin: 0 auto;
+	position: relative;
+	top:8px;
+}
+#imgs{
+	width: 1280px;
+	height: 720px;
+	overflow: hidden;
+	position: relative;
+}
+#imgs ul{
+	width: 6400px;
+	height: 720px;
+	position: absolute;
+	left:-40px;
+	top: -16px;
+	z-index: 1;
+}
+#spot{
+	width: 180px;
+	height: 20px;
+	position: absolute;
+	float: left;
+	right: -5px;
+	bottom: 28px;
+	z-index: 5;
+}
+#spot ul li a{
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	background: white;
+	display: inline-block;
+	border-radius: 50%;
+	margin-right: 5px;
+	text-align: center;
+	font-size: 12px;
+}
+#pre,#next{
+	width: 100px;
+	height: 80px;
+	line-height: 80px;
+	background: black;
+	color: white;
+	font-size: 20px;
+	font-weight: 900;
+	text-align:center;
+	position: absolute;
+	top: 50%;
+	z-index: 3;
+}
+#pre{
+	left: 0px;
+}
+#next{
+	right: 0px;
+}
+#spot ul li a.current{
+	background: red;
+	color: white;
+}
+#spot ul li a.hidden{
+	background: white;
+	color: black;
+}

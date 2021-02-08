@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+	<head>
+		<title>模板</title>
+		<meta charset="utf-8">
+		<script src="vue.js"></script>
+	</head>
+	<body>
+		<div id="app">
+			<div class="choose" @click="go()">{{!show?"显示":"隐藏"}}</div>
+			<div :class="TheClass">邓晓军喜欢收藏软件！</div>
+		</div>
+		<script>
+			new Vue({
+				el:"#app",
+				data:{
+					show:false,
+					TheClass:"view2"
+				},
+				methods:{
+					go(){
+						this.show=!this.show;
+						this.TheClass=this.show?'view1':'view2';
+					}
+				}
+			})
+		</script>
+		<style>
+			.choose{
+				width:200px;
+				height:20px;
+				background:darkgray;
+				text-align:center;
+				line-height:20px;
+			}
+			.view1{
+				width:200px;
+				height:200px;
+				overflow: hidden;
+				background:silver;
+				text-align:center;
+				line-height:200px;
+				transition: all 300ms;
+			}
+			.view2{
+				width:200px;
+				height:0px;
+				overflow: hidden;
+				background:silver;
+				text-align:center;
+				line-height:100px;
+				transition: all 300ms;
+			}
+		</style>
+	</body>
+</html>

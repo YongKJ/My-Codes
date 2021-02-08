@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>进度条</title>
+    <link rel="stylesheet" href="style4.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.22/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="progress">
+    <div class="button">
+    <input type="radio" :checked="is[0].a" @click="choose(0)"><label>{{is[0].m}}</label>
+    <input type="radio" :checked="is[1].a" @click="choose(1)"><label>{{is[1].m}}</label>
+    <input type="radio" :checked="is[2].a" @click="choose(2)"><label>{{is[2].m}}</label>
+    <input type="radio" :checked="is[3].a" @click="choose(3)"><label>{{is[3].m}}</label>
+    <input type="radio" :checked="is[4].a" @click="choose(4)"><label>{{is[4].m}}</label>
+    <input type="radio" :checked="is[5].a" @click="choose(5)"><label>{{is[5].m}}</label>
+    </div>
+    <br>
+    <div class="backgroundcolor">
+      <transition name="fade">
+      <div id="dong" :class="is[n].b"><label>{{is[n].m}}</label></div>
+      </transition>
+    </div>
+    </div>
+    <script src="web4js.js"></script>
+  </body>
+</html>

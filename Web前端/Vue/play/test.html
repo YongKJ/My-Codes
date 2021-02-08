@@ -1,0 +1,56 @@
+<aside id="zan_login-6">
+  <div class="panel panel-zan">
+    <div class="panel-heading">请登录</div>
+    <form
+      class="login-form clearfix"
+      action="https://vcb-s.com/wp-login.php"
+      method="post"
+    >
+      <div class="form-group">
+        <div class="input-group">
+          <div class="input-group-addon"><i class="fa fa-user"></i></div>
+          <input
+            class="form-control"
+            type="text"
+            name="log"
+            id="log"
+            value=""
+            size="20"
+          />
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="input-group">
+          <div class="input-group-addon"><i class="fa fa-lock"></i></div>
+          <input
+            class="form-control"
+            type="password"
+            name="pwd"
+            id="pwd"
+            size="20"
+          />
+        </div>
+      </div>
+      <div style="display: none;">
+        <input
+          name="rememberme"
+          type="checkbox"
+          id="rememberme"
+          value="forever"
+        />
+      </div>
+      <button
+        class="btn btn-inverse-primary pull-left"
+        type="submit"
+        name="submit"
+      >
+        登录
+      </button>
+      <a
+        href="https://vcb-s.com/wp-login.php?action=register"
+        class="btn btn-inverse-primary pull-right"
+        >注册</a
+      >
+    </form>
+  </div>
+</aside>

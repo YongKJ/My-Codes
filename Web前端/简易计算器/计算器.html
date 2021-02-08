@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>简易计算器</title>
+	<link rel="stylesheet" href="计算器.css">
+	 <script src="计算器.js" charset="utf-8"></script>
+</head>
+<body style="margin:0;background: #607D8B;">
+	<div class="div1">
+	<div id="display"><div id="display1">0</div></div>
+	<table id="calculate1" onClick="calculater()" border="0" cellpadding="0" cellspacing="0">
+		<tr><td class="number"><div id="7" class="number1">7</div></td><td class="number"><div id="8" class="number1">8</div></td><td class="number"><div id="9" class="number1">9</div></td></tr>
+		<tr><td class="number"><div id="4" class="number1">4</div></td><td class="number"><div id="5" class="number1">5</div></td><td class="number"><div id="6" class="number1">6</div></td></tr>
+		<tr><td class="number"><div id="1" class="number1">1</div></td><td class="number"><div id="2" class="number1">2</div></td><td class="number"><div id="3" class="number1">3</div></td></tr>
+		<tr><td class="number"><div id="." class="number1"><div style="position: relative;left: 4px;bottom: 4px;">.</div></td><td class="number"><div id="0" class="number1">0</div></td><td class="number"><div id="=" class="number1">=</div></td></tr>
+	</table>
+	<div class="div2">
+	<table id="calculate2" onClick="calculater()" border="0" cellpadding="0" cellspacing="0">
+		<tr><td class="symbol" id="deletesign1"><div id="清除" class="symbol1">清除</div></td></tr>
+		<tr><td class="symbol"><div id="÷" class="symbol1">÷</div></td></tr>
+		<tr><td class="symbol"><div id="×" class="symbol1">×</div></td></tr>
+		<tr><td class="symbol"><div id="-" class="symbol1">-</div></td></tr>
+		<tr><td class="symbol"><div id="+" class="symbol1">+</div></td></tr>
+	</table>
+	</div>
+	</div>
+</body>
+</html>

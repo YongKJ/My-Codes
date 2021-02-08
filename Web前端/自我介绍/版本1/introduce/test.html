@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>模板</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap-grid.css" />
+    <link
+      rel="stylesheet"
+      href="bootstrap-4.3.1-dist/css/bootstrap-reboot.css"
+    />
+  </head>
+  <body style="font-family: YouYuan;">
+    <div id="test">
+      <nav class="navbar navbar-expand-sm" style="background: #AABFAE;">
+        <ul class="navbar-nav ml-auto pr-5">
+          <li class="nav-item pr-5 mr-5">
+            <a
+              class="nav-link pr-5"
+              href="#"
+              style="color: #838B7E;font-size:22px;"
+              >我的规划</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div id="content" class="container-fluid pt-5" style="overflow: hidden;">
+        <div class="row align-items-center">
+          <div class="col-sm-5 col-md-4  col-lg-3 col-xl-2">
+            <div class="container-fluid">
+              <span style="font-size: 20px">个人信息</span>
+              <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+              <p v-html="info.dongMan"></p>
+              <p v-html="info.drink"></p>
+              <p v-html="info.book"></p>
+              <p v-html="info.music"></p>
+            </div>
+          </div>
+          <div class="col-sm-2 col-md-4 col-lg-6 col-xl-7">
+            <div class="container-fluid" style="text-align: center">
+              <img
+                class="center-block"
+                src="source/1.jpeg"
+                style="width:45%;"
+                alt="图片"
+              />
+            </div>
+          </div>
+          <div class="col-sm-5 col-md-4 col-lg-3 col-xl-3">
+            <div class="container-fluid">
+              <p v-html="info.name"></p>
+              <p v-html="info.age"></p>
+              <p v-html="info.profession"></p>
+              <p v-html="info.address"></p>
+              <p v-html="info.hobby"></p>
+              <p v-html="info.color"></p>
+              <p v-html="info.personality"></p>
+            </div>
+          </div>
+          <div class="container-fluid ml-3" v-html="info.quote"></div>
+        </div>
+      </div>
+
+      <nav
+        class="navbar navbar-default navbar-fixed-bottom pt-4"
+        style="background:#8D9D90;position: relative;top:62px;"
+      >
+        <div v-html="info.motto" style="margin:0 auto;height: 40px;"></div>
+      </nav>
+      <audio
+        src="source/Summer-久石让-180299.flac"
+        loop
+        autoplay
+        ref="MusicPlay"
+      ></audio>
+    </div>
+
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.12.5/umd/popper.min.js"></script>
+    <script src="bootstrap-4.3.1-dist/js/bootstrap.js"></script>
+    <script src="bootstrap-4.3.1-dist/js/bootstrap.bundle.js"></script>
+    <script src="vue/vue.js"></script>
+    <script src="test.js" async defer></script>
+  </body>
+</html>

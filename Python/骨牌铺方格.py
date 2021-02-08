@@ -1,0 +1,44 @@
+global s
+s = [0] * 51
+
+def cell():
+	s[1] = 1
+	s[2] = 2
+	for i in range(3,51):
+		s[i] = s[i - 1] + s[i - 2]
+
+if __name__  == "__main__":
+	cell() 
+	n = int(input())
+	while 0 < n and n <= 50:
+		print(s[n])
+		n = int(input())
+
+
+"""
+Problem Description
+在2×n的一个长方形方格中,用一个1× 2的骨牌铺满方格,输入n ,输出铺放方案的总数.
+例如n=3时,为2× 3方格，骨牌的铺放方案有三种,如下图：
+
+ 
+
+Input
+输入数据由多行组成，每行包含一个整数n,表示该测试实例的长方形方格的规格是2×n (0<n<=50)。
+ 
+
+Output
+对于每个测试实例，请输出铺放方案的总数，每个实例的输出占一行。
+ 
+
+Sample Input
+1
+3
+2
+ 
+
+Sample Output
+1
+3
+2
+
+"""

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>VCB-Studio</title>
+    <link
+      rel="apple-touch-icon"
+      href="img/favicon@180.png"
+      sizes="180x180"
+      type="image/png"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="https://cache.cswsadlab.com/wp-content/customRes/favicon@180.png"
+      sizes="180x180"
+      type="image/png"
+    />
+    <link
+      rel="stylesheet"
+      href="css/bootstrap-3.3.7-dist/css/bootstrap.min.css"
+    />
+    <link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body class="bg">
+    <div id="app">
+      <header class="navbar navbar-fixed-top" :style="nav">
+        <nav class="container">
+          <a href="#">
+            <div class="navbar-brand"></div>
+          </a>
+          <button
+            class="navbar-toggle"
+            type="button"
+            data-toggle="collapse"
+            data-target=".bs-navbar-collapse"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="fa fa-reorder fa-lg"></span>
+          </button>
+          <div class="navbar-collapse bs-navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li>
+                <a href="#"> <i class="fa fa-book"></i> 作品项目 </a>
+              </li>
+              <li>
+                <a href="#"> <i class="fa fa-group"></i> 科普系列 </a>
+              </li>
+              <li>
+                <a href="#"> <i class="fa fa-calendar"></i> 计划与日志 </a>
+              </li>
+              <li>
+                <a href="#"> <i class="fa fa-coffee"></i> 留言板 </a>
+              </li>
+              <li>
+                <a href="#"> <i class="fa fa-comments-o"></i> 论坛 </a>
+              </li>
+              <li>
+                <a href="#"> <i class="fa fa-user"></i> 关于 VCB-S </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <div id="bodyer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8">
+              <div id="message" v-show="show" class="well fade in">
+                <button
+                  type="button"
+                  style="color: black !important;"
+                  class="close"
+                  @click="handleClick"
+                >
+                  ×
+                </button>
+                <h5>
+                  <span style="color: #008000;">
+                    VCB-S 开放课程：
+                    <span style="color: #0000ff;"
+                      ><a
+                        style="color: #0000ff;"
+                        href="#"
+                        target="_blank"
+                        rel="noopener"
+                        >http://vcb-s.nmm-hd.org/</a
+                      >
+                    </span>
+                    <br />
+                    <br />
+                    <span style="color: #008000;">VCB-S 字幕论坛：</span
+                    ><a
+                      href="#"
+                      target="_blank"
+                      rel="noopener"
+                      style="color: #d2322d;"
+                      >http://bbs.vcb-s.com/</a
+                    >
+                    <br />
+                    <br />
+                    <span style="color: #008000;"
+                      >请使用正规 BT 客户端 ，详见：</span
+                    ><a
+                      href="#"
+                      target="_blank"
+                      rel="noopener"
+                      style="color: #d2322d;"
+                      >https://vcb-s.com/archives/2584</a
+                    >
+                    <br />
+                    <br />
+                    <span style="color: #000000;"
+                      >VCB-S新的全球加速已经部署完毕，欢迎亲们去留言板提交bug，或者写下浏览体验哦~</span
+                    >
+                  </span>
+                </h5>
+              </div>
+              <div class="test1"></div>
+            </div>
+            <aside class="col-md-4" id="sidebar">
+              <aside>
+                <div class="search">
+                  <form
+                    class="form-inline clearfix"
+                    method="get"
+                    id="searchform"
+                    action="#"
+                    style="position: relative;"
+                  >
+                    <input
+                      id="input"
+                      class="form-control"
+                      type="text"
+                      placeholder="搜索..."
+                      style="font-size: 13px;"
+                    />
+                    <button type="submit" class="btn">
+                      <i class="fa fa-search"></i>
+                    </button>
+                  </form>
+                </div>
+              </aside>
+              <div class="test2"></div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="css/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="js/vue/vue.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

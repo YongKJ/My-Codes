@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>轮播图</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <link rel="stylesheet" href="css/bootstrap-4.3.1-dist/css/bootstrap.css" />
+    
+    <link
+      rel="stylesheet"
+      href="css/bootstrap-4.3.1-dist/css/bootstrap-grid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="css/bootstrap-4.3.1-dist/css/bootstrap-reboot.css"
+    />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="container">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="i in l">
+                    <td>{{i.fname}}</td>
+                    <td>{{i.lname}}</td>
+                    <td>{{i.email}}</td>
+                </tr>
+            </tbody>
+        </table>
+      </div>
+
+      {{ imgs[0].image }}
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="css/bootstrap-4.3.1-dist/js/bootstrap.js"></script>
+    <script src="css/bootstrap-4.3.1-dist/js/bootstrap.bundle.js"></script>
+    <script src="js/vue/vue.js"></script>
+    <script src="1.js" async defer></script>
+    <script src="play.js" async defer></script>
+  </body>
+</html>

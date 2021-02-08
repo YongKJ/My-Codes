@@ -1,0 +1,52 @@
+#include <iostream>
+using namespace std;
+typedef struct node {
+  int x;
+  node *next;
+} * link;
+int main(){
+  link la, lb, j;
+  la = new node, la->next = NULL;
+  lb = new node, lb->next = NULL;
+  for (int i = 0; i < 3; i++) {
+    link s = new node;
+    cin >> s->x;
+    for ( j = la; j->next; j = j->next)
+      if (j->next->x > s->x)break;
+    s->next = j->next, j->next = s;
+  }
+  for (int i = 0; i < 4; i++) {
+    link s = new node;
+    cin >> s->x;
+    for (j = lb; j->next; j = j->next)
+      if (j->next->x > s->x)
+        break;
+    s->next = j->next, j->next = s;
+  }
+  link lc = la, t = la->next;
+  lc->next = NULL;
+  for (link i = lb->next, j = t, q; i || j;) {
+    /*if (!i)
+      q = j, j = j->next;
+    else if (!j)
+      q = i, i = i->next;
+    else if (i->x <= j->x)
+      q = i, i = i->next;
+    else
+      q = j, j = j->next;*/
+      if(!j||i->x<=j->x)
+        q = i, i = i->next;
+        //else if(!i||i->x>j->x)
+        else
+          q = j, j = j->next;
+    q->next = lc->next, lc->next = q;
+  }
+  delete lb;
+  for (link i=lc->next;i;i=i->next)
+  cout<<i->x<<(i->next?" ":"\n");
+  /*for (link i = la->next; i; i = i->next)
+    cout << i->x << (i->next ? " " : "\n");
+  for (link i = lb->next; i; i = i->next)
+    cout << i->x << (i->next ? " " : "\n");*/
+  return 0;
+}

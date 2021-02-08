@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculate</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 1px;
+        }
+        
+        #calculater {
+            margin: auto;
+            margin-top: 30px;
+            border: solid 6px #2371D3;
+            border-spacing: 0px;
+        }
+        
+        #display {
+            width: 100%;
+            height: 30px;
+            border-bottom: solid 4px #2371D3;
+            font-weight: bold;
+            color: #193D83;
+            font-family: 黑体;
+            padding-left: 2px;
+        }
+        
+        .numberkey {
+            cursor: pointer;
+            width: 40px;
+            height: 30px;
+            border: solid 1px #FFFFFF;
+            background: #2371d3;
+            color: #FFFFFF;
+            text-align: center;
+            font-weight: bold;
+            font-family: 黑体;
+        }
+        
+        #equality {
+            cursor: pointer;
+            width: 40px;
+            height: 100%;
+            background: #2371d3;
+            border: solid 1px #FFFFFF;
+            color: #FFFFFF;
+            text-align: center;
+            font-weight: bold;
+            font-family: 黑体;
+        }
+        
+        .numberkey:hover {
+            background: #EA6F30;
+        }
+        
+        #equality:hover {
+            background: #EA6F30;
+        }
+    </style>
+    <script>
+        var results = "";
+        var calresults = "";
+        var flag=0;
+
+        function calculater() {
+        	if(flag)results="",flag=0;
+            var curValue = event.srcElement.innerText;
+            if (curValue == "=" || curValue == "C") {
+                return;
+            }
+
+            results += event.srcElement.innerText;
+            display.innerText = results;
+        }
+
+        function resultcalculate() {
+            calresults = eval(results);
+            if (results == "") {
+                calresults = "0";
+            }
+            display.innerText = calresults;
+            flag=1;
+        }
+
+        function del() {
+
+            results = "";
+            display.innerText = "0";
+
+        }
+    </script>
+
+</head>
+
+<body>
+    <table id="calculater" onClick="calculater()">
+        <tr>
+            <td id="display" colspan="5">0</td>
+        </tr>
+        <tr>
+            <td class="numberkey">1</td>
+            <td class="numberkey">2</td>
+            <td class="numberkey">3</td>
+            <td class="numberkey">+</td>
+            <td class="numberkey" id="deletesign" onclick="del()">C</td>
+        </tr>
+        <tr>
+            <td class="numberkey">4</td>
+            <td class="numberkey">5</td>
+            <td class="numberkey">6</td>
+            <td class="numberkey">-</td>
+            <td class="numberkey" rowspan="3" id="equality" onClick="resultcalculate()">=</td>
+        </tr>
+        <tr>
+            <td class="numberkey">7</td>
+            <td class="numberkey">8</td>
+            <td class="numberkey">9</td>
+            <td class="numberkey">*</td>
+        </tr>
+        <tr>
+            <td class="numberkey">00</td>
+            <td class="numberkey">0</td>
+            <td class="numberkey">.</td>
+            <td class="numberkey">/</td>
+        </tr>
+    </table>
+</body>
+
+</html>

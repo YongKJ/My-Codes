@@ -1,0 +1,91 @@
+body{
+  color: white;
+}
+#box{
+  width: 800px;
+  height: 850px;
+  background: darkgray;
+}
+#header{
+  width: 800px;
+  height: 150px;
+  background: #59999f;
+}
+#main{
+  width: 800px;
+  height: 500px;
+  background: #a1dd4c;
+}
+#main .main-left{
+  width: 200px;
+  height: 400px;
+  background: #d25721;
+  position: absolute;
+  left: 30px;
+  top:210px;
+  line-height: 50px;
+  text-indent: 15px;
+}
+#main .main-top{
+  width: 530px;
+  height: 100px;
+  background: #d25721;
+  position: absolute;
+  left: 250px;
+  top:210px;
+  line-height: 50px;
+  text-indent: 15px;
+}
+#main .main-outside-box{
+  width: 530px;
+  height: 280px;
+  background: #a1dd4c;
+  position: relative;
+  left: 242px;
+  top:152px;
+}
+#main .main-rightj-1{
+  width: 30%;
+  height: 100%;
+  background: #d25721;
+  float: left;
+  position: relative;
+  line-height: 50px;
+  text-indent: 15px;
+}
+#main .main-rightj-2{
+  width: 30%;
+  height: 100%;
+  background: #d25721;
+  float: left;
+  position: relative;
+  left: 25px;
+  line-height: 50px;
+  text-indent: 15px;
+}
+#main .main-rightj-3{
+  width: 30%;
+  height: 100%;
+  background: #d25721;
+  float: left;
+  position: relative;
+  left: 52px;
+  line-height: 50px;
+  text-indent: 15px;
+}
+#foot{
+  width: 800px;
+  height: 200px;
+  background: #535353;
+
+}
+#foot .mid-box{
+  width: 500px;
+  height: 150px;
+  background: #acacac;
+  margin: 0 auto;
+  position: relative;
+  top: 5px;
+  line-height: 50px;
+  text-indent: 15px;
+}

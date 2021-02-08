@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Personal Finance", "Personal Finance\Personal Finance.vcxproj", "{0896378C-5A5B-444E-9A95-CA91D965C538}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0896378C-5A5B-444E-9A95-CA91D965C538}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0896378C-5A5B-444E-9A95-CA91D965C538}.Debug|Win32.Build.0 = Debug|Win32
+		{0896378C-5A5B-444E-9A95-CA91D965C538}.Release|Win32.ActiveCfg = Release|Win32
+		{0896378C-5A5B-444E-9A95-CA91D965C538}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

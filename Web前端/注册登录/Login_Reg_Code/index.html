@@ -1,0 +1,67 @@
+
+<html >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>登录</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link rel="stylesheet" href="css/style.css" />
+  <script type="text/javascript">
+  function reloadCode(){
+  	var time =new Date().getTime();
+  	document.getElementById("imagecode").src="<%=request.getContextPath()%>/servlet/ImageServlet?d="+time;
+  }
+  </script>
+  <style type="text/css">
+		input,img {
+
+		vertical-align: middle;
+
+	}
+		</style>
+
+  <body>
+<div id="particles-js">
+<div class="login-container">
+	<h1>用户登录</h1>
+	
+	<div class="connect">
+		<p></p>
+	</div>
+	
+	<form action="" method="post" id="loginForm">
+		<div>
+			<input type="text" name="username" class="username" placeholder="用户名" autocomplete="off"/>
+		</div>
+		<div>
+			<input type="password" name="password" class="password" placeholder="密码" oncontextmenu="return false" onpaste="return false" />
+		</div>
+		<div>
+		<input type="text" name="checkcode" placeholder="验证码"/>
+		</div>
+		<button id="submit" type="submit">登 录</button>
+	</form>
+	<a href="register.html">
+		<button type="button" class="register-tis">还有没有账号？</button>
+	</a>
+	<div class="yanZhengMa">
+			<img alt="验证码" id="imagecode" src="<%=request.getContextPath()%>/servlet/ImageServlet"/ >   
+  			&nbsp;&nbsp;<a href="javascript:reloadCode()" style="font-size:12px;color:#BF360C;text-align:center;text-decoration:none;">看不清楚</a>
+		</div>
+ </div>
+ 
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/particles.min.js"></script>
+<script src="js/app.js"></script>
+<!--背景图片自动更换-->
+<script src="js/supersized.3.2.7.min.js"></script>
+<script src="js/supersized-init.js"></script>
+<!--表单验证-->
+<script src="js/jquery.validate.min.js?var1.14.0"></script>
+
+</body>
+</html>

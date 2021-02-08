@@ -1,0 +1,27 @@
+ul li{
+	float: left;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#nav ul{
+  width: ;
+  height: 50px;
+  color: #616161;
+  background:#eeeeee ;
+}
+#nav ul li{
+  width:70px ;
+  height:50px ;
+  text-align: center;
+  line-height: 50px;
+  font-size: 20px;
+  border-left: 3px solid #eeeeee;
+}
+#nav ul li:hover{
+  width:70px ;
+  height:47px ;
+  cursor: pointer;
+  color: black;
+  border-bottom: 3px solid #1bcae2;
+}

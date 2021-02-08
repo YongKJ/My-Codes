@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>进度条</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/bootstrap-4.3.1-dist/css/bootstrap.css" />
+
+    <link
+      rel="stylesheet"
+      href="css/bootstrap-4.3.1-dist/css/bootstrap-grid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="css/bootstrap-4.3.1-dist/css/bootstrap-reboot.css"
+    />
+  </head>
+  <body>
+    <div id="app">
+      <div class="progress">
+        <div class="progress-bar bg-success" :style="width"></div>
+      </div>
+
+      <div class="progress">
+        <div class="progress-bar bg-info" :style="width"></div>
+      </div>
+
+      <div class="progress">
+        <div class="progress-bar bg-warning" :style="width"></div>
+      </div>
+
+      <div class="progress">
+        <div class="progress-bar bg-danger" :style="width"></div>
+      </div>
+      {{width}}
+      <button type="button" class="btn btn-primary" @click="add()">增长10%</button>
+      <button type="button" class="btn btn-warning" @click="decrease()">降低10%</button>
+      <button type="button" class="btn btn-danger" @click="go()">增</button>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="css/bootstrap-4.3.1-dist/js/bootstrap.js"></script>
+    <script src="css/bootstrap-4.3.1-dist/js/bootstrap.bundle.js"></script>
+    <script src="js/vue/vue.js"></script>
+    <script src="进度条.js" async defer></script>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>信息调查表</title>
+    <link rel="stylesheet" href="style3.css">
+  </head>
+  <body>
+    <div id="information">
+      <div class="box">
+      <span
+      style="font-size:22px;font-weight:bold;"
+      >信息调查</span>
+      <p>
+        <label>姓名 : </label>
+        <input type="text" name="" value="">
+      </p>
+      <p><label>性别 :  </label>
+      <input type="radio" checked name="man" value="">男
+      <input type="radio" name="man" value="">女
+      </p>
+      <p>
+        <label>年级 : </label>
+        <select id="year"></select>
+      </p>
+      <p>
+        <label>你学过的知识 : </label>
+        <input type="checkbox" checked>html
+        <input type="checkbox">CSS
+        <input type="checkbox">javascript
+      </p>
+      <p>
+        <label>自我介绍 : </label><br>
+        <textarea  rows="10" cols="60" id="Text"></textarea>
+        <p>
+        <input type="button" value="提交"/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="button" value="重新输入"  onclick="clean()"/>
+        </p>
+      </p>
+    </div>
+    </div>
+    <script  type="text/javascript">
+    function clean(){
+        document.getElementById("Text").value="";
+    }
+      for(var i=2014;i<=2018;i++){
+      if(i==2017)
+        document.getElementById('year').innerHTML+='<option selected>'+i+'</<option>';
+      else
+        document.getElementById('year').innerHTML+='<option>'+i+'</<option>';
+    }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+﻿生成启动时间为 2019/5/15 星期三 23:39:38。
+     1>项目“d:\documents\visual studio 2010\Projects\Personal Finance\Personal Finance\Personal Finance.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“Debug\Personal Finance.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       GenerateTargetFrameworkMonikerAttribute:
+       正在跳过目标“GenerateTargetFrameworkMonikerAttribute”，因为所有输出文件相对于输入文件而言都是最新的。
+       ClCompile:
+         所有输出均为最新。
+         D:\Software\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0" /Zi /clr:pure /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\Personal Finance.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /analyze- /errorReport:prompt Form2.cpp Form4.cpp "Personal Finance.cpp" /clr:nostdlib 
+         Form2.cpp
+     1>d:\documents\visual studio 2010\projects\personal finance\personal finance\Form3.h(47): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Software\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>d:\documents\visual studio 2010\projects\personal finance\personal finance\Form3.h(121): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>d:\documents\visual studio 2010\projects\personal finance\personal finance\Form5.h(45): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Software\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>d:\documents\visual studio 2010\projects\personal finance\personal finance\Form5.h(77): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>d:\documents\visual studio 2010\projects\personal finance\personal finance\Form2.h(49): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Software\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>d:\documents\visual studio 2010\projects\personal finance\personal finance\Form2.h(178): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Software\Microsoft Visual Studio 10.0\VC\include\time.inl(112) : 参见“localtime”的声明
+         Form4.cpp
+     1>d:\documents\visual studio 2010\projects\personal finance\personal finance\Form3.h(47): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Software\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>d:\documents\visual studio 2010\projects\personal finance\personal finance\Form3.h(121): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>d:\documents\visual studio 2010\projects\personal finance\personal finance\Form5.h(45): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Software\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>d:\documents\visual studio 2010\projects\personal finance\personal finance\Form5.h(77): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>d:\documents\visual studio 2010\projects\personal finance\personal finance\Form2.h(49): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Software\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>d:\documents\visual studio 2010\projects\personal finance\personal finance\Form2.h(178): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Software\Microsoft Visual Studio 10.0\VC\include\time.inl(112) : 参见“localtime”的声明
+     1>d:\documents\visual studio 2010\projects\personal finance\personal finance\Form4.h(47): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Software\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>d:\documents\visual studio 2010\projects\personal finance\personal finance\Form4.h(90): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+         Personal Finance.cpp
+     1>d:\documents\visual studio 2010\projects\personal finance\personal finance\Form3.h(47): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Software\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>d:\documents\visual studio 2010\projects\personal finance\personal finance\Form3.h(121): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>d:\documents\visual studio 2010\projects\personal finance\personal finance\Form5.h(45): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Software\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>d:\documents\visual studio 2010\projects\personal finance\personal finance\Form5.h(77): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>d:\documents\visual studio 2010\projects\personal finance\personal finance\Form2.h(49): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Software\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>d:\documents\visual studio 2010\projects\personal finance\personal finance\Form2.h(178): warning C4996: 'localtime': This function or variable may be unsafe. Consider using localtime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Software\Microsoft Visual Studio 10.0\VC\include\time.inl(112) : 参见“localtime”的声明
+     1>d:\documents\visual studio 2010\projects\personal finance\personal finance\Form4.h(47): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Software\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+     1>d:\documents\visual studio 2010\projects\personal finance\personal finance\Form4.h(90): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+     1>d:\documents\visual studio 2010\projects\personal finance\personal finance\Form1.h(46): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 D:\Software\Microsoft Visual Studio 10.0\VC\include\stdio.h(371) : 参见“sprintf”的声明
+         正在生成代码...
+         所有输出均为最新。
+       CoreResGen:
+         没有相对于源文件而言已过期的资源。正在跳过资源生成操作。
+       ResourceCompile:
+         所有输出均为最新。
+       Link:
+         D:\Software\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"d:\documents\visual studio 2010\Projects\Personal Finance\Debug\Personal Finance.exe" /INCREMENTAL /NOLOGO /ASSEMBLYRESOURCE:Debug\PersonalFinance.Form1.resources /ASSEMBLYRESOURCE:Debug\PersonalFinance.Form2.resources /ASSEMBLYRESOURCE:Debug\PersonalFinance.Form3.resources /ASSEMBLYRESOURCE:Debug\PersonalFinance.Form4.resources /ASSEMBLYRESOURCE:Debug\PersonalFinance.Form5.resources /MANIFEST /ManifestFile:"Debug\Personal Finance.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"d:\documents\visual studio 2010\Projects\Personal Finance\Debug\Personal Finance.pdb" /ASSEMBLYDEBUG /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"main" /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Debug\app.res
+         Debug\AssemblyInfo.obj
+         Debug\Financing.obj
+         Debug\Form2.obj
+         Debug\Form3.obj
+         Debug\Form4.obj
+         Debug\Form5.obj
+         "Debug\Personal Finance.obj"
+         Debug\stdafx.obj
+         "Debug\.NETFramework,Version=v4.0.AssemblyAttributes.obj"
+         Personal Finance.vcxproj -> d:\documents\visual studio 2010\Projects\Personal Finance\Debug\Personal Finance.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"d:\documents\visual studio 2010\Projects\Personal Finance\Debug\Personal Finance.exe;#1" /manifest "Debug\Personal Finance.exe.intermediate.manifest"
+       FinalizeBuildStatus:
+         正在删除文件“Debug\Personal Finance.unsuccessfulbuild”。
+         正在对“Debug\Personal Finance.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“d:\documents\visual studio 2010\Projects\Personal Finance\Personal Finance\Personal Finance.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:04.03

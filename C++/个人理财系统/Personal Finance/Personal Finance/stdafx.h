@@ -1,0 +1,20 @@
+// stdafx.h : 标准系统包含文件的包含文件，
+// 或是经常使用但不常更改的
+// 特定于项目的包含文件
+#pragma once
+#include <iostream>
+#include <string>
+#include <cstring>
+#include <map>
+#include <set>
+#include <fstream>
+#include <sstream>
+#include <tchar.h>
+#include <Windows.h> 
+#include <time.h>
+#include <msclr\marshal_cppstd.h>
+#include "Financing.h"
+//#include "Form1.h"
+//#include "Form2.h"
+//#include "Form4.h"
+// TODO: 在此处引用程序需要的其他头文件

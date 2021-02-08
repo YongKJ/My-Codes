@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>我的规划</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/bootstrap-4.3.1-dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style1.css" />
+    <link rel="stylesheet" href="css/bootstrap-4.3.1-dist/css/bootstrap-grid.css" />
+    <link
+      rel="stylesheet"
+      href="css/bootstrap-4.3.1-dist/css/bootstrap-reboot.css"
+    />
+  </head>
+  <body style="font-family: YouYuan;">
+    <div id="test1">
+      <nav class="navbar navbar-expand-sm" style="background: #AABFAE;">
+        <ul class="navbar-nav ml-auto pr-5">
+          <li class="nav-item pr-5 mr-5">
+            <a
+              class="nav-link pr-5"
+              href="infomation.html"
+              style="color: #838B7E;font-size:22px;"
+              >我的信息</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="container-fluid mt-3 pl-4">
+        <span style="color:#769374;font-size:20px;">人生规划</span>
+      </div>
+
+      <div
+        class="container-fluid p-3 mt-3"
+        style="overflow: hidden;border-top:3px dashed #E1ECE5;border-bottom:3px dashed #E1ECE5;"
+      >
+        <div class="row">
+          <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
+            <div
+              class="container-fluid"
+              style="width:30%;border:1px solid black;text-align: center"
+            >
+              <span :style="text">一年内</span>
+            </div>
+            <div
+              class="container-fluid p-0"
+              style="width:0%;height:43px;border-right:1px dashed black;"
+            ></div>
+            <div class="container-fluid">
+              <div
+                class="container-fluid"
+                v-html="oneYear"
+                :style="contentStyle"
+              ></div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
+            <div
+              class="container-fluid"
+              style="width:30%;border:1px solid black;text-align: center"
+            >
+              <span :style="text">三年内</span>
+            </div>
+            <div
+              class="container-fluid p-0"
+              style="width:0%;height:43px;border-right:1px dashed black;"
+            ></div>
+            <div class="container-fluid">
+              <div
+                class="container-fluid"
+                v-html="threeYear"
+                :style="contentStyle"
+              ></div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
+            <div
+              class="container-fluid"
+              style="width:30%;border:1px solid black;text-align: center"
+            >
+              <span :style="text">五年内</span>
+            </div>
+            <div
+              class="container-fluid p-0"
+              style="width:0%;height:43px;border-right:1px dashed black;"
+            ></div>
+            <div class="container-fluid">
+              <div
+                class="container-fluid"
+                v-html="fiveYear"
+                :style="contentStyle"
+              ></div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
+            <div
+              class="container-fluid"
+              style="width:30%;border:1px solid black;text-align: center"
+            >
+              <span :style="text">十年内</span>
+            </div>
+            <div
+              class="container-fluid p-0"
+              style="width:0%;height:43px;border-right:1px dashed black;"
+            ></div>
+            <div class="container-fluid">
+              <div
+                class="container-fluid"
+                v-html="tenYear"
+                :style="contentStyle"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid mt-3 pl-4">
+          <span style="color:#769374;font-size:20px;">我的乐趣</span>
+      </div>
+
+      <div class="container-fulid" style="overflow: hidden">
+          <div class="row">
+              <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2" style="height:150px;">
+                  <div class="container-fulid">
+                      <div class="container-fulid pt-2" :style="textCommon+textStyle1">养花</div>
+                      <img src="source/2.jpg" :style="imgCommon" />
+                  </div>
+              </div>
+              <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2" style="height:150px;">
+                  <div class="container-fulid">
+                      <div class="container-fulid pt-2" :style="textCommon+textStyle2">阅读</div>
+                      <img src="source/3.jpg" :style="imgCommon" />
+                  </div>
+              </div>
+              <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2" style="height:150px;">
+                  <div class="container-fulid">
+                      <div class="container-fulid pt-3" :style="textCommon+textStyle3">美食</div>
+                      <img src="source/5.jpg" :style="imgCommon" />
+                  </div>
+              </div>
+              <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2" style="height:150px;">
+                  <div class="container-fulid">
+                      <div class="container-fulid pt-2" :style="textCommon+textStyle4">旅游</div>
+                      <img src="source/7.jpg" :style="imgCommon" />
+                  </div>
+              </div>
+              <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2" style="height:150px;">
+                  <div class="container-fulid">
+                      <div class="container-fulid pt-3" :style="textCommon+textStyle5">练字</div>
+                      <img src="source/4.jpg" :style="imgCommon" />
+                  </div>
+              </div>
+              <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2" style="height:150px;">
+                  <div class="container-fulid">
+                      <div class="container-fulid pt-2" :style="textCommon+textStyle6">学设计</div>
+                      <img src="source/6.jpg" :style="imgCommon" />
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <nav
+        class="navbar navbar-default navbar-fixed-bottom pt-4"
+        style="background:#8D9D90;position: relative;top:12px;"
+      >
+        <div v-html="motto" style="margin:0 auto;height: 40px;"></div>
+      </nav>
+      <audio
+        src="source/Time_Travel-岸部眞明-1549522.mp3"
+        loop
+        autoplay
+        ref="MusicPlay"
+      ></audio>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="css/bootstrap-4.3.1-dist/js/bootstrap.js"></script>
+    <script src="css/bootstrap-4.3.1-dist/js/bootstrap.bundle.js"></script>
+    <script src="js/vue/vue.js"></script>
+    <script src="js/test1.js" async defer></script>
+  </body>
+</html>
